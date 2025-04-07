@@ -41,21 +41,70 @@
       color: #666;
       font-size: 18px;
     }
+
+    .link-preview {
+      display: inline-block;
+      text-align: left;
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .link-preview img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .link-preview-content {
+      padding: 20px;
+    }
+
+    .link-preview-content h3 {
+      margin: 0 0 10px;
+      color: #0077cc;
+    }
+
+    .link-preview-content p {
+      margin: 0;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .link-preview-content a {
+      text-decoration: none;
+      color: #0077cc;
+    }
   </style>
 </head>
 <body>
 
-  <!-- 🌟 Banner Section -->
+  <!-- 🌟 Banner -->
   <div class="banner">
     🚀 Check out our latest tool at 
-    <a href="https://amzn.to/4cpZYeE" target="_blank">Egg Boiler</a>
+    <a href="https://example.com" target="_blank">example.com</a>
   </div>
 
-  <!-- 🔽 Content Section -->
+  <!-- 🔽 Content -->
   <div class="content">
     <h1>Welcome to Blorbixal!</h1>
-    <p>This is the official Blorbixal site made for best amazon finds!.</p>
-    <p><a href="https://chat.openai.com">Powered by Priyanka</a></p>
+    <p>This is the official Blorbixal site made for learning how to host websites and appear on Google.</p>
+
+    <!-- 🧩 Link Preview Component -->
+    <div class="link-preview">
+      <a href="https://amzn.to/4cpZYeE" target="_blank">
+        <img src="https://m.media-amazon.com/images/I/71tIWqrBr6L._SX679_.jpg" alt="Preview Image">
+      </a>
+      <div class="link-preview-content">
+        <h3><a href="https://amzn.to/4cpZYeE" target="_blank">It's the Egg Boiler</a></h3>
+        <p>Your perfect tool to serve the high protein daily needs!</p>
+      </div>
+    </div>
+
+    <p><a href="https://chat.openai.com">Powered by ChatGPT</a></p>
   </div>
 
 </body>
